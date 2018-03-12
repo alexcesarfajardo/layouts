@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">APS</string>
+
+    <string name="next_button" >Siguiente</string>
+    <string name="back_button">Anterior</string>
+    
+    <string name="tittle">Aspectos de comercializacion</string>
+    <string name="subtitle1">Lugar de venta de la produccion de leche</string>
+    <string name="subtitle2">Lugar de venta de los machos</string>
+    <string name="subtitle3">Lugar de venta - Precios en cordobas</string>
+</resources>
