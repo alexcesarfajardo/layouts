@@ -8,4 +8,18 @@
     <string name="subtitle1">Lugar de venta de la produccion de leche</string>
     <string name="subtitle2">Lugar de venta de los machos</string>
     <string name="subtitle3">Lugar de venta - Precios en cordobas</string>
+    <string name="equipmentinfraestructureTitle">Situacion de los equipos e infraestructura</string>
+    <string name="galeras_m2">Galeras - m2</string>
+    <string name="good">Bueno</string>
+    <string name="regular">Regular</string>
+    <string name="bad">Malo</string>
+    <string name="corrales">Corrales - m2</string>
+    <string name="salas_de_orde_o_m2">Salas de ordeño - m2</string>
+    <string name="bodegas_m2">Bodegas - m2</string>
+    <string name="biodigestor_m3">Biodigestor - m3</string>
+    <string name="comederos_unidad">Comederos - Unidad</string>
+    <string name="salitreros_unidad">Salitreros - Unidad</string>
+    <string name="pulperos_m3">Pulperos - m3</string>
+    <string name="transporte_unidades">Transporte - Unidades</string>
+    <string name="save">Guardar</string>
 </resources>

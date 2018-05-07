@@ -1,6 +1,6 @@
 package alex.cesar.fajardo.uca.com.aps.models;
 
-public class aspectsOfMarketing {
+public class AspectsOfMarketing {
 
     //aspectsofmarketing1
     private String acopio;

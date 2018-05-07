@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:fillViewport="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:fillViewport="true">
 
     <LinearLayout
 
@@ -13,24 +13,24 @@
         android:orientation="vertical"
         android:background="@color/verde">
 
-        <LinearLayout
-            android:id="@+id/layout_titulo"
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/layout_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="10dp"
-            android:textAlignment="center">
+            android:text="@string/equipmentinfraestructureTitle"
+            android:textColor="@color/blackColor"
+            android:textSize="24sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/equipmentinfraestructureTitle"
-                android:textColor="@color/blackColor"
-                android:textSize="24sp" />
+    </LinearLayout>
 
-        </LinearLayout>
-
-        <!-- CardView de Galeras -->
+        <!-- CardView de Comederos -->
         <android.support.v7.widget.CardView
             android:layout_margin="4dp"
             android:elevation="6dp"
@@ -51,7 +51,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/galeras_m2"
+                        android:text="@string/comederos_unidad"
                         android:textSize="20sp"
                         android:textColor="@color/blackColor"/>
 
@@ -117,9 +117,9 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- FIN CardView de Galeras -->
+        <!-- FIN CardView de Comederos -->
 
-        <!-- CardView de Corrales -->
+        <!-- CardView de Abrevaderos -->
         <android.support.v7.widget.CardView
             android:layout_margin="4dp"
             android:elevation="6dp"
@@ -140,7 +140,97 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/corrales"
+                        android:text="Abrevaderos - Unidad"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingRight="80dp"
+                    android:paddingLeft="80dp"
+                    android:layout_margin="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:hint="@string/good"
+                            android:inputType="number"
+                            android:padding="6dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:hint="@string/regular"
+                            android:padding="6dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:hint="@string/bad"
+                            android:padding="6dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!-- FIN CardView de Abrevaderos -->
+
+        <!-- CardView de Salitreros -->
+        <android.support.v7.widget.CardView
+            android:layout_margin="4dp"
+            android:elevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/salitreros_unidad"
                         android:textSize="20sp"
                         android:textColor="@color/blackColor"/>
 
@@ -206,9 +296,9 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- FIN CardView de Corrales -->
+        <!-- FIN CardView de Salitreros -->
 
-        <!-- CardView de Salas de ordeno -->
+        <!-- CardView de pulperos -->
         <android.support.v7.widget.CardView
             android:layout_margin="4dp"
             android:elevation="6dp"
@@ -229,7 +319,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/salas_de_orde_o_m2"
+                        android:text="@string/pulperos_m3"
                         android:textSize="20sp"
                         android:textColor="@color/blackColor"/>
 
@@ -295,9 +385,9 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- FIN CardView de salas de ordeno -->
+        <!-- FIN CardView de Pulperos -->
 
-        <!-- CardView de bodegas -->
+        <!-- CardView de Benefico -->
         <android.support.v7.widget.CardView
             android:layout_margin="4dp"
             android:elevation="6dp"
@@ -318,7 +408,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/bodegas_m2"
+                        android:text="Benefico - qq"
                         android:textSize="20sp"
                         android:textColor="@color/blackColor"/>
 
@@ -384,9 +474,9 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- FIN CardView de Bodegas -->
+        <!-- FIN CardView de Benefico -->
 
-        <!-- CardView de Biodigestor -->
+        <!-- CardView de Transporte -->
         <android.support.v7.widget.CardView
             android:layout_margin="4dp"
             android:elevation="6dp"
@@ -407,7 +497,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/biodigestor_m3"
+                        android:text="@string/transporte_unidades"
                         android:textSize="20sp"
                         android:textColor="@color/blackColor"/>
 
@@ -473,96 +563,7 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- FIN CardView de Biodigestor -->
-
-        <!-- CardView de Picadoras -->
-        <android.support.v7.widget.CardView
-            android:layout_margin="4dp"
-            android:elevation="6dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Picadoras - HP"
-                        android:textSize="20sp"
-                        android:textColor="@color/blackColor"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:paddingRight="80dp"
-                    android:paddingLeft="80dp"
-                    android:layout_margin="18dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <android.support.design.widget.TextInputLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:hint="@string/good"
-                            android:padding="6dp" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                    <android.support.design.widget.TextInputLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:hint="@string/regular"
-                            android:padding="6dp" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                    <android.support.design.widget.TextInputLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <android.support.design.widget.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:inputType="number"
-                            android:hint="@string/bad"
-                            android:padding="6dp" />
-
-                    </android.support.design.widget.TextInputLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-        <!-- FIN CardView de Picadoras -->
+        <!-- FIN CardView de Transporte -->
 
         <LinearLayout
 
@@ -576,10 +577,30 @@
             <Button
                 android:elevation="6dp"
                 android:backgroundTint="@color/white"
-                android:textColor="@color/blackColor"
+                android:textColor="@color/verde"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/next_button"
+                android:text="@string/back_button"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:elevation="6dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/verde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
                 />
 
         </LinearLayout>
